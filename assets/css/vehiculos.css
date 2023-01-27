@@ -1,0 +1,4066 @@
+/* Navegador del sitio web*/
+
+#mercedes {
+    /*logo del sitio web*/
+    margin-top: 20px;
+}
+
+nav {
+    position: absolute;
+    display: block;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 225px;
+    background-repeat: no-repeat;
+    background: url("../imagenes/menu1.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+nav>ul {
+    display: inline-block;
+    border-radius: 0.35em;
+    padding: 15px;
+}
+
+nav ul li:hover>ul {
+    display: block;
+}
+
+nav>ul>li {
+    display: inline-block;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+}
+
+nav ul>ul {
+    display: none;
+    position: absolute;
+}
+
+nav>ul>li>a,
+nav>ul>li>span {
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 1.6px;
+}
+
+nav>ul>li:hover>a {
+    color: #81DAF5;
+    transform: scale(1.1);
+}
+
+nav>ul>li.active>a,
+nav>ul>li.active>span {
+    color: #fff;
+}
+
+body {
+    /*body del sitio web*/
+    background: url("../imagenes/fondo1.jpg") no-repeat center center fixed;
+    background-size: 100% 100%;
+}
+
+#up {
+    /* Botón subir */
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    cursor: pointer;
+    display: none;
+    background-color: transparent;
+    z-index: 1;
+}
+
+#arriba {
+    /*Tamaño de la flecha*/
+    width: 25px;
+    height: 30px;
+    filter: brightness(0) invert(1);
+}
+
+
+/*Nuestros Vehículos, las imágenes cambian solas*/
+
+#context_top>h2 {
+    position: relative;
+    display: block;
+    margin: 300px 0px -290px 0px;
+    font-family: sans-serif;
+    font-size: 30px;
+    color: transparent;
+    background-image: url(https://media.giphy.com/media/WmoA2i9oII7OBQzzGT/giphy.gif);
+    background-position: center;
+    -webkit-background-clip: text;
+}
+
+#sliders {
+    /*slider de las imágenes*/
+    width: 1040px;
+    height: 500px;
+    margin: 320px auto;
+    position: relative;
+    margin-bottom: 0px;
+    background: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    border: 7px solid #454545;
+    border-radius: 20px;
+}
+
+.botones-sliders {
+    /*botones de las sliders*/
+    width: 1040px;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-bottom: 0px;
+    overflow: hidden;
+}
+
+.img-sliders {
+    /*imágenes de las sliders*/
+    width: 400%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow-y: hidden;
+    z-index: 1;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.slide img {
+    /*imágenes*/
+    margin-top: -100px;
+    width: 25%;
+    float: left;
+}
+
+
+/*Clase S Berlina*/
+
+#context_top-b>h2 {
+    border-bottom: 1px solid #968f7e;
+    display: block;
+    font-family: sans-serif;
+    font-size: 28px;
+    color: transparent;
+    background-image: url(https://media.giphy.com/media/hWWeurJRRMGnVyN9Em/giphy.gif);
+    background-position: center;
+    -webkit-background-clip: text;
+}
+
+#context_top-b {
+    position: absolute;
+    color: #fff;
+    margin: 335px 1000px -290px 20px;
+    font-size: 20px;
+}
+
+#sliders-b {
+    /*slider de las imágenes*/
+    width: 840px;
+    height: 470px;
+    margin: 350px -20px 0px 780px;
+    position: relative;
+    margin-bottom: 0px;
+    background: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    border: 7px solid #454545;
+    border-radius: 20px;
+}
+
+#s1-b {
+    /*botón 1*/
+    padding: 7px;
+    background: #fff;
+    position: absolute;
+    left: 48%;
+    bottom: 25px;
+    margin-left: -36px;
+    border-radius: 20px;
+    opacity: 0.6;
+    cursor: pointer;
+    z-index: 999;
+}
+
+#s2-b {
+    /*botón 2*/
+    padding: 7px;
+    background: #fff;
+    position: absolute;
+    left: 48%;
+    bottom: 25px;
+    margin-left: -12px;
+    border-radius: 20px;
+    opacity: 0.6;
+    cursor: pointer;
+    z-index: 999;
+}
+
+#s3-b {
+    /*botón 3*/
+    padding: 7px;
+    background: #fff;
+    position: absolute;
+    left: 48%;
+    bottom: 25px;
+    margin-left: 12px;
+    border-radius: 20px;
+    opacity: 0.6;
+    cursor: pointer;
+    z-index: 999;
+}
+
+#s4-b {
+    /*botón 4*/
+    padding: 7px;
+    background: #fff;
+    position: absolute;
+    left: 48%;
+    bottom: 25px;
+    margin-left: 36px;
+    border-radius: 20px;
+    opacity: 0.6;
+    cursor: pointer;
+    z-index: 999;
+}
+
+
+/*opacidad del boton cuando pasas el cursor*/
+
+#s1-b:hover,
+#s2-b:hover,
+#s3-b:hover,
+#s4-b:hover {
+    opacity: .50;
+}
+
+.botones-sliders-b {
+    /*botones de las sliders*/
+    width: 940px;
+    height: 470px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-bottom: 0px;
+    overflow: hidden;
+}
+
+
+/*Orientación y vista de los botones*/
+
+.control-b {
+    display: none;
+}
+
+#Slide1-b:checked~.img-sliders-b {
+    margin-left: 0%;
+}
+
+#Slide2-b:checked~.img-sliders-b {
+    margin-left: -100%;
+}
+
+#Slide3-b:checked~.img-sliders-b {
+    margin-left: -200%;
+}
+
+#Slide4-b:checked~.img-sliders-b {
+    margin-left: -300%;
+}
+
+
+/*color de los botones cuando los pulsamos*/
+
+#Slide1-b:checked+#s1-b {
+    opacity: 1;
+    background-color: #0fff;
+}
+
+#Slide2-b:checked+#s2-b {
+    opacity: 1;
+    background-color: #0fff;
+}
+
+#Slide3-b:checked+#s3-b {
+    opacity: 1;
+    background-color: #0fff;
+}
+
+#Slide4-b:checked+#s4-b {
+    opacity: 1;
+    background-color: #0fff;
+}
+
+.img-sliders-b {
+    /*imágenes de las sliders*/
+    width: 400%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow-y: hidden;
+    z-index: 1;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.slide-b img {
+    /*imagenes*/
+    margin-top: -30px;
+    width: 25%;
+    float: left;
+}
+
+
+/*Clase c coupé*/
+
+#context_top-c>h2 {
+    border-bottom: 1px solid #968f7e;
+    display: block;
+    font-family: sans-serif;
+    font-size: 28px;
+    color: transparent;
+    background-image: url(https://media.giphy.com/media/hWWeurJRRMGnVyN9Em/giphy.gif);
+    background-position: center;
+    -webkit-background-clip: text;
+}
+
+#context_top-c {
+    position: absolute;
+    color: #fff;
+    margin: 335px 50px -290px 960px;
+    font-size: 20px;
+}
+
+#sliders-c {
+    /*slider de las imágenes*/
+    width: 840px;
+    height: 470px;
+    margin: 350px 30px 0px -850px;
+    position: relative;
+    margin-bottom: 0px;
+    background: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    border: 7px solid #454545;
+    border-radius: 20px;
+}
+
+#s1-c {
+    /*botón 1*/
+    padding: 7px;
+    background: #fff;
+    position: absolute;
+    left: 45%;
+    bottom: 25px;
+    margin-left: -36px;
+    border-radius: 20px;
+    opacity: 0.6;
+    cursor: pointer;
+    z-index: 999;
+}
+
+#s2-c {
+    /*botón 2*/
+    padding: 7px;
+    background: #fff;
+    position: absolute;
+    left: 45%;
+    bottom: 25px;
+    margin-left: -12px;
+    border-radius: 20px;
+    opacity: 0.6;
+    cursor: pointer;
+    z-index: 999;
+}
+
+#s3-c {
+    /*botón 3*/
+    padding: 7px;
+    background: #fff;
+    position: absolute;
+    left: 45%;
+    bottom: 25px;
+    margin-left: 12px;
+    border-radius: 20px;
+    opacity: 0.6;
+    cursor: pointer;
+    z-index: 999;
+}
+
+#s4-c {
+    /*botón 4*/
+    padding: 7px;
+    background: #fff;
+    position: absolute;
+    left: 45%;
+    bottom: 25px;
+    margin-left: 36px;
+    border-radius: 20px;
+    opacity: 0.6;
+    cursor: pointer;
+    z-index: 999;
+}
+
+
+/*opacidad del boton cuando pasas el cursor*/
+
+#s1-c:hover,
+#s2-c:hover,
+#s3-c:hover,
+#s4-c:hover {
+    opacity: .50;
+}
+
+.botones-sliders-c {
+    /*botones de las sliders*/
+    width: 940px;
+    height: 470px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-bottom: 0px;
+    overflow: hidden;
+}
+
+
+/*Orientación y vista de los botones*/
+
+.control-c {
+    display: none;
+}
+
+#Slide1-c:checked~.img-sliders-c {
+    margin-left: 0%;
+}
+
+#Slide2-c:checked~.img-sliders-c {
+    margin-left: -100%;
+}
+
+#Slide3-c:checked~.img-sliders-c {
+    margin-left: -200%;
+}
+
+#Slide4-c:checked~.img-sliders-c {
+    margin-left: -300%;
+}
+
+
+/*color de los botones cuando los pulsamos*/
+
+#Slide1-c:checked+#s1-c {
+    opacity: 1;
+    background-color: #0fff;
+}
+
+#Slide2-c:checked+#s2-c {
+    opacity: 1;
+    background-color: #0fff;
+}
+
+#Slide3-c:checked+#s3-c {
+    opacity: 1;
+    background-color: #0fff;
+}
+
+#Slide4-c:checked+#s4-c {
+    opacity: 1;
+    background-color: #0fff;
+}
+
+.img-sliders-c {
+    /*imágenes de las sliders*/
+    width: 400%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow-y: hidden;
+    z-index: 1;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.slide-c img {
+    /*imagenes*/
+    margin-top: -80px;
+    width: 25%;
+    float: left;
+}
+
+
+/*Eléctrico*/
+
+#context_top-e>h2 {
+    border-bottom: 1px solid #968f7e;
+    display: block;
+    font-family: sans-serif;
+    font-size: 28px;
+    color: transparent;
+    background-image: url(https://media.giphy.com/media/hWWeurJRRMGnVyN9Em/giphy.gif);
+    background-position: center;
+    -webkit-background-clip: text;
+}
+
+#context_top-e {
+    position: absolute;
+    color: #fff;
+    margin: 335px 1000px -290px 20px;
+    font-size: 20px;
+}
+
+#sliders-e {
+    /*slider de las imágenes*/
+    width: 840px;
+    height: 470px;
+    margin: 350px -20px 0px 780px;
+    position: relative;
+    margin-bottom: 0px;
+    background: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    border: 7px solid #454545;
+    border-radius: 20px;
+}
+
+#s1-e {
+    /*botón 1*/
+    padding: 7px;
+    background: #fff;
+    position: absolute;
+    left: 45%;
+    bottom: 25px;
+    margin-left: -36px;
+    border-radius: 20px;
+    opacity: 0.6;
+    cursor: pointer;
+    z-index: 999;
+}
+
+#s2-e {
+    /*botón 2*/
+    padding: 7px;
+    background: #fff;
+    position: absolute;
+    left: 45%;
+    bottom: 25px;
+    margin-left: -12px;
+    border-radius: 20px;
+    opacity: 0.6;
+    cursor: pointer;
+    z-index: 999;
+}
+
+#s3-e {
+    /*botón 3*/
+    padding: 7px;
+    background: #fff;
+    position: absolute;
+    left: 45%;
+    bottom: 25px;
+    margin-left: 12px;
+    border-radius: 20px;
+    opacity: 0.6;
+    cursor: pointer;
+    z-index: 999;
+}
+
+#s4-e {
+    /*botón 4*/
+    padding: 7px;
+    background: #fff;
+    position: absolute;
+    left: 45%;
+    bottom: 25px;
+    margin-left: 36px;
+    border-radius: 20px;
+    opacity: 0.6;
+    cursor: pointer;
+    z-index: 999;
+}
+
+
+/*opacidad del boton cuando pasas el cursor*/
+
+#s1-e:hover,
+#s2-e:hover,
+#s3-e:hover,
+#s4-e:hover {
+    opacity: .50;
+}
+
+.botones-sliders-e {
+    /*botones de las sliders*/
+    width: 940px;
+    height: 470px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-bottom: 0px;
+    overflow: hidden;
+}
+
+
+/*Orientación y vista de los botones*/
+
+.control-e {
+    display: none;
+}
+
+#Slide1-e:checked~.img-sliders-e {
+    margin-left: 0%;
+}
+
+#Slide2-e:checked~.img-sliders-e {
+    margin-left: -100%;
+}
+
+#Slide3-e:checked~.img-sliders-e {
+    margin-left: -200%;
+}
+
+#Slide4-e:checked~.img-sliders-e {
+    margin-left: -300%;
+}
+
+
+/*color de los botones cuando los pulsamos*/
+
+#Slide1-e:checked+#s1-e {
+    opacity: 1;
+    background-color: #0fff;
+}
+
+#Slide2-e:checked+#s2-e {
+    opacity: 1;
+    background-color: #0fff;
+}
+
+#Slide3-e:checked+#s3-e {
+    opacity: 1;
+    background-color: #0fff;
+}
+
+#Slide4-e:checked+#s4-e {
+    opacity: 1;
+    background-color: #0fff;
+}
+
+.img-sliders-e {
+    /*imágenes de las sliders*/
+    width: 400%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow-y: hidden;
+    z-index: 1;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.slide-e img {
+    /*imágenes*/
+    margin-top: -40px;
+    width: 25%;
+    float: left;
+}
+
+
+/*Clase GLE SUV*/
+
+#context_top-u>h2 {
+    border-bottom: 1px solid #968f7e;
+    display: block;
+    font-family: sans-serif;
+    font-size: 28px;
+    color: transparent;
+    background-image: url(https://media.giphy.com/media/hWWeurJRRMGnVyN9Em/giphy.gif);
+    background-position: center;
+    -webkit-background-clip: text;
+}
+
+#context_top-u {
+    position: absolute;
+    color: #fff;
+    margin: 335px 50px -290px 960px;
+    font-size: 20px;
+}
+
+#sliders-u {
+    /*slider de las imágenes*/
+    width: 840px;
+    height: 470px;
+    margin: 350px 30px 0px -850px;
+    position: relative;
+    margin-bottom: 0px;
+    background: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    border: 7px solid #454545;
+    border-radius: 20px;
+}
+
+#s1-u {
+    /*botón 1*/
+    padding: 7px;
+    background: #fff;
+    position: absolute;
+    left: 45%;
+    bottom: 25px;
+    margin-left: -36px;
+    border-radius: 20px;
+    opacity: 0.6;
+    cursor: pointer;
+    z-index: 999;
+}
+
+#s2-u {
+    /*botón 2*/
+    padding: 7px;
+    background: #fff;
+    position: absolute;
+    left: 45%;
+    bottom: 25px;
+    margin-left: -12px;
+    border-radius: 20px;
+    opacity: 0.6;
+    cursor: pointer;
+    z-index: 999;
+}
+
+#s3-u {
+    /*botón 3*/
+    padding: 7px;
+    background: #fff;
+    position: absolute;
+    left: 45%;
+    bottom: 25px;
+    margin-left: 12px;
+    border-radius: 20px;
+    opacity: 0.6;
+    cursor: pointer;
+    z-index: 999;
+}
+
+#s4-u {
+    /*botón 4*/
+    padding: 7px;
+    background: #fff;
+    position: absolute;
+    left: 45%;
+    bottom: 25px;
+    margin-left: 36px;
+    border-radius: 20px;
+    opacity: 0.6;
+    cursor: pointer;
+    z-index: 999;
+}
+
+
+/*opacidad del boton cuando pasas el cursor*/
+
+#s1-u:hover,
+#s2-u:hover,
+#s3-u:hover,
+#s4-u:hover {
+    opacity: .50;
+}
+
+.botones-sliders-u {
+    /*botones de las sliders*/
+    width: 940px;
+    height: 470px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-bottom: 0px;
+    overflow: hidden;
+}
+
+
+/*Orientación y vista de los botones*/
+
+.control-u {
+    display: none;
+}
+
+#Slide1-u:checked~.img-sliders-u {
+    margin-left: 0%;
+}
+
+#Slide2-u:checked~.img-sliders-u {
+    margin-left: -100%;
+}
+
+#Slide3-u:checked~.img-sliders-u {
+    margin-left: -200%;
+}
+
+#Slide4-u:checked~.img-sliders-u {
+    margin-left: -300%;
+}
+
+
+/*color de los botones cuando los pulsamos*/
+
+#Slide1-u:checked+#s1-u {
+    opacity: 1;
+    background-color: #0fff;
+}
+
+#Slide2-u:checked+#s2-u {
+    opacity: 1;
+    background-color: #0fff;
+}
+
+#Slide3-u:checked+#s3-u {
+    opacity: 1;
+    background-color: #0fff;
+}
+
+#Slide4-u:checked+#s4-u {
+    opacity: 1;
+    background-color: #0fff;
+}
+
+.img-sliders-u {
+    /*imágenes de las sliders*/
+    width: 400%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow-y: hidden;
+    z-index: 1;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.slide-u img {
+    /*imágenes*/
+    margin-top: -40px;
+    width: 25%;
+    float: left;
+}
+
+
+/*Copyright del sitio web*/
+
+#copyright>li>a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#copyright>li:hover>a {
+    color: #81DAF5;
+}
+
+.copyright-li {
+    border-top: 1px solid #2045ab;
+    list-style: none;
+    float: right;
+    margin: 100px 20px 10px 600px;
+}
+
+
+/* Responsive  ----------------------------------------------*/
+
+@media screen and (max-width: 479px) {
+
+    /*Pone en responsive la página cuando cambia a menos de 479px*/
+
+    nav,
+    nav ul,
+    nav li,
+    nav ul li {
+        width: 100%;
+        color: #000;
+        padding-left: 0px;
+        padding-top: 0px;
+        margin: -2px 0px 0px -5px;
+    }
+
+    nav {
+        position: absolute;
+        display: block;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100px;
+        background: url("../imagenes/menu2.jpg")no-repeat center center fixed;
+        background-size: 100% 100%;
+    }
+
+    nav ul ul {
+        position: inherit;
+        height: auto;
+        display: block;
+        padding-right: 20px;
+    }
+
+    /*Nuestros Vehículos, las imágenes cambian solas*/
+
+    #context_top>h2 {
+        position: relative;
+        display: block;
+        margin: 200px 0px -290px 0px;
+    }
+
+    #sliders {
+        /*slider de las imágenes*/
+        width: 375px;
+        height: 190px;
+        margin: 330px auto;
+        position: relative;
+        margin-bottom: 0px;
+        background: rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        border: 3px solid #454545;
+        border-radius: 20px;
+        z-index: -1;
+    }
+
+    .botones-sliders {
+        /*botones de las sliders*/
+        width: 440px;
+        height: 470px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-bottom: 0px;
+        overflow: hidden;
+        z-index: 3000;
+    }
+
+    .img-sliders {
+        /*imágenes de las sliders*/
+        width: 400%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow-y: hidden;
+        z-index: 1;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        z-index: 3000;
+    }
+
+    .slide img {
+        /*imágenes*/
+        width: 22%;
+        height: 65%;
+        float: left;
+    }
+
+    /*Clase S Berlina*/
+
+    #context_top-b>h2 {
+        border-bottom: 1px solid #968f7e;
+    }
+
+    #context_top-b {
+        position: absolute;
+        margin: 150px 10px 0px 10px;
+        font-size: 16px;
+    }
+
+    #sliders-b {
+        /*slider de las imágenes*/
+        width: 375px;
+        height: 200px;
+        margin: 650px 0px 0px 0px;
+        position: relative;
+        margin-bottom: 0px;
+        background: rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        border: 3px solid #454545;
+        border-radius: 20px;
+    }
+
+    .botones-sliders-b {
+        /*botones de las sliders*/
+        width: 115%;
+        height: 270px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-bottom: 0px;
+        overflow: hidden;
+    }
+
+    .img-sliders-b {
+        /*imágenes de las sliders*/
+        width: 400%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow-y: hidden;
+        z-index: 1;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+    #s1-b {
+        /*botón 1*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        top: 160px;
+        left: 33%;
+        bottom: 110px;
+        margin-top: 15px;
+        margin-left: 5px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s2-b {
+        /*botón 2*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        top: 160px;
+        left: 33%;
+        bottom: 110px;
+        margin-top: 15px;
+        margin-left: 30px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s3-b {
+        /*botón 3*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        top: 160px;
+        left: 33%;
+        bottom: 110px;
+        margin-top: 15px;
+        margin-left: 55px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s4-b {
+        /*botón 4*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        top: 160px;
+        left: 33%;
+        bottom: 110px;
+        margin-top: 15px;
+        margin-left: 80px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    /*Clase c coupé*/
+
+    #context_top-c>h2 {
+        border-bottom: 1px solid #968f7e;
+    }
+
+    #context_top-c {
+        position: absolute;
+        margin: 150px 10px 0px 10px;
+        font-size: 16px;
+    }
+
+    #sliders-c {
+        /*slider de las imágenes*/
+        width: 375px;
+        height: 200px;
+        margin: 650px 0px 0px 0px;
+        position: relative;
+        margin-bottom: 0px;
+        background: rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        border: 3px solid #454545;
+        border-radius: 20px;
+    }
+
+    .botones-sliders-c {
+        /*botones de las sliders*/
+        width: 115%;
+        height: 270px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-bottom: 0px;
+        overflow: hidden;
+    }
+
+    .img-sliders-c {
+        /*imágenes de las sliders*/
+        width: 400%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow-y: hidden;
+        z-index: 1;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+    #s1-c {
+        /*botón 1*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        top: 160px;
+        left: 33%;
+        bottom: 110px;
+        margin-top: 15px;
+        margin-left: 5px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s2-c {
+        /*botón 2*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        top: 160px;
+        left: 33%;
+        bottom: 110px;
+        margin-top: 15px;
+        margin-left: 30px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s3-c {
+        /*botón 3*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        top: 160px;
+        left: 33%;
+        bottom: 110px;
+        margin-top: 15px;
+        margin-left: 55px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s4-c {
+        /*botón 4*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        top: 160px;
+        left: 33%;
+        bottom: 110px;
+        margin-top: 15px;
+        margin-left: 80px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    /*Eléctrico*/
+
+    #context_top-e>h2 {
+        border-bottom: 1px solid #968f7e;
+    }
+
+    #context_top-e {
+        position: absolute;
+        margin: 150px 10px 0px 10px;
+        font-size: 16px;
+    }
+
+    #sliders-e {
+        /*slider de las imágenes*/
+        width: 375px;
+        height: 200px;
+        margin: 730px 0px 0px 0px;
+        position: relative;
+        margin-bottom: 0px;
+        background: rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        border: 3px solid #454545;
+        border-radius: 20px;
+    }
+
+    .botones-sliders-e {
+        /*botones de las sliders*/
+        width: 115%;
+        height: 270px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-bottom: 0px;
+        overflow: hidden;
+    }
+
+    .img-sliders-e {
+        /*imágenes de las sliders*/
+        width: 400%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow-y: hidden;
+        z-index: 1;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+    #s1-e {
+        /*botón 1*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        top: 160px;
+        left: 33%;
+        bottom: 110px;
+        margin-top: 15px;
+        margin-left: 5px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s2-e {
+        /*botón 2*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        top: 160px;
+        left: 33%;
+        bottom: 110px;
+        margin-top: 15px;
+        margin-left: 30px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s3-e {
+        /*botón 3*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        top: 160px;
+        left: 33%;
+        bottom: 110px;
+        margin-top: 15px;
+        margin-left: 55px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s4-e {
+        /*botón 4*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        top: 160px;
+        left: 33%;
+        bottom: 110px;
+        margin-top: 15px;
+        margin-left: 80px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    /*Clase GLE SUV*/
+
+    #context_top-u>h2 {
+        border-bottom: 1px solid #968f7e;
+    }
+
+    #context_top-u {
+        position: absolute;
+        margin: 150px 10px 0px 10px;
+        font-size: 16px;
+    }
+
+    #sliders-u {
+        /*slider de las imágenes*/
+        width: 375px;
+        height: 200px;
+        margin: 750px 0px 0px 0px;
+        position: relative;
+        margin-bottom: 0px;
+        background: rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        border: 3px solid #454545;
+        border-radius: 20px;
+    }
+
+    .botones-sliders-u {
+        /*botones de las sliders*/
+        width: 115%;
+        height: 270px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-bottom: 0px;
+        overflow: hidden;
+    }
+
+    .img-sliders-u {
+        /*imágenes de las sliders*/
+        width: 400%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow-y: hidden;
+        z-index: 1;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+    #s1-u {
+        /*botón 1*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        top: 160px;
+        left: 33%;
+        bottom: 110px;
+        margin-top: 15px;
+        margin-left: 5px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s2-u {
+        /*botón 2*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        top: 160px;
+        left: 33%;
+        bottom: 110px;
+        margin-top: 15px;
+        margin-left: 30px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s3-u {
+        /*botón 3*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        top: 160px;
+        left: 33%;
+        bottom: 110px;
+        margin-top: 15px;
+        margin-left: 55px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s4-u {
+        /*botón 4*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        top: 160px;
+        left: 33%;
+        bottom: 110px;
+        margin-top: 15px;
+        margin-left: 80px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    /*Copyright del sitio web*/
+    
+    .copyright-li {
+        border-top: 1px solid #2045ab;
+        list-style: none;
+        text-align: center;
+        float: right;
+        margin: 100px 10px 0px -30px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+
+    /*Pone en responsive la página cuando cambia a menos de 479px*/
+
+    #mercedes {
+        /*logo del sitio web*/
+        margin-top: 20px;
+    }
+}
+
+.show-menu-btn,
+.hide-menu-btn {
+    /*boton de menu responsive*/
+    transition: 0.4s;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    padding-left: 30px;
+    margin: 0px;
+    color: #fff;
+}
+
+#chk {
+    /*check menu responsive (está oculto y cuando se pulsa el boton en relidad pulsamos este check*/
+    position: absolute;
+    visibility: hidden;
+    z-index: -1111;
+}
+
+@media screen and (max-width:479px) {
+
+    /*Pone en responsive la página cuando cambia a menos de 479px*/
+
+    .show-menu-btn,
+    .hide-menu-btn {
+        /*boton de menu responsive*/
+        display: block;
+    }
+
+    body {
+        background: url("../imagenes/menu2.jpg") no-repeat center center fixed;
+        background-size: 100% 100%;
+    }
+
+    .menu {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background-color: #454545;
+        left: -150%;
+        top: 0;
+        transition: 0.5s;
+        text-align: center;
+        overflow-x: hidden;
+        z-index: 1;
+    }
+
+    .activa {
+        margin-top: 50px;
+    }
+
+    .menu a {
+        display: block;
+        padding: 20px;
+    }
+
+    nav>ul>li {
+        padding-bottom: 0px;
+        margin-left: 5px;
+    }
+
+    .show-menu-btn {
+        /*boton de menu responsive (...)*/
+        position: absolute;
+        top: 40px;
+        right: 48px;
+    }
+
+    .hide-menu-btn {
+        /*boton de menu responsive (X)*/
+        position: absolute;
+        top: 40px;
+        right: 50px;
+    }
+
+    #chk:checked~.menu {
+        /*check menu responsive*/
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 650px) and (min-width: 480px) {
+
+    /*Pone en responsive la página cuando cambia a menos de 650px y más de 480px*/
+    /*Nuestros Vehículos, las imágenes cambian solas*/
+
+    #context_top>h2 {
+        position: relative;
+        display: block;
+        margin: 350px 0px -290px 0px;
+    }
+
+    #sliders {
+        /*slider de las imágenes*/
+        width: 475px;
+        height: 260px;
+        margin: 330px auto;
+        position: relative;
+        margin-bottom: 0px;
+        background: rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        border: 3px solid #454545;
+        border-radius: 20px;
+        z-index: 3000;
+    }
+
+    .botones-sliders {
+        /*botones de las sliders*/
+        width: 540px;
+        height: 570px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-bottom: 0px;
+        overflow: hidden;
+        z-index: 3000;
+    }
+
+    .img-sliders {
+        /*imágenes de las sliders*/
+        width: 400%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow-y: hidden;
+        z-index: 1;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        z-index: 3000;
+    }
+
+    /*Clase S Berlina*/
+
+    #context_top-b>h2 {
+        border-bottom: 1px solid #968f7e;
+    }
+
+    #context_top-b {
+        position: absolute;
+        margin: 300px 15px 0px 15px;
+        font-size: 16px;
+    }
+
+    #sliders-b {
+        /*slider de las imágenes*/
+        width: 475px;
+        height: 260px;
+        margin: 700px 0px 0px 0px;
+        position: relative;
+        margin-bottom: 0px;
+        background: rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        border: 3px solid #454545;
+        border-radius: 20px;
+    }
+
+    .botones-sliders-b {
+        /*botones de las sliders*/
+        width: 540px;
+        height: 270px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-bottom: 0px;
+        overflow: hidden;
+    }
+
+    .img-sliders-b {
+        /*imágenes de las sliders*/
+        width: 400%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow-y: hidden;
+        z-index: 1;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+    #s1-b {
+        /*botón 1*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        top: 240px;
+        left: 43%;
+        bottom: 25px;
+        margin-left: -36px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s2-b {
+        /*botón 2*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        top: 240px;
+        left: 43%;
+        bottom: 25px;
+        margin-left: -12px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s3-b {
+        /*botón 3*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        top: 240px;
+        left: 43%;
+        bottom: 25px;
+        margin-left: 12px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s4-b {
+        /*botón 4*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        top: 240px;
+        left: 43%;
+        bottom: 25px;
+        margin-left: 36px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    /*Clase c coupé*/
+
+    #context_top-c>h2 {
+        border-bottom: 1px solid #968f7e;
+    }
+
+    #context_top-c {
+        position: absolute;
+        margin: 150px 15px 0px 15px;
+        font-size: 16px;
+    }
+
+    #sliders-c {
+        /*slider de las imágenes*/
+        width: 475px;
+        height: 260px;
+        margin: 530px 0px 0px 0px;
+        position: relative;
+        margin-bottom: 0px;
+        background: rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        border: 3px solid #454545;
+        border-radius: 20px;
+    }
+
+    .botones-sliders-c {
+        /*botones de las sliders*/
+        width: 540px;
+        height: 270px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-bottom: 0px;
+        overflow: hidden;
+    }
+
+    .img-sliders-c {
+        /*imágenes de las sliders*/
+        width: 400%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow-y: hidden;
+        z-index: 1;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+    #s1-c {
+        /*botón 1*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        top: 240px;
+        left: 43%;
+        bottom: 25px;
+        margin-left: -36px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s2-c {
+        /*botón 2*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        top: 240px;
+        left: 43%;
+        bottom: 25px;
+        margin-left: -12px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s3-c {
+        /*botón 3*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        top: 240px;
+        left: 43%;
+        bottom: 25px;
+        margin-left: 12px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s4-c {
+        /*botón 4*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        top: 240px;
+        left: 43%;
+        bottom: 25px;
+        margin-left: 36px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    /*Eléctrico*/
+
+    #context_top-e>h2 {
+        border-bottom: 1px solid #968f7e;
+    }
+
+    #context_top-e {
+        position: absolute;
+        margin: 150px 15px 0px 15px;
+        font-size: 16px;
+    }
+
+    #sliders-e {
+        /*slider de las imágenes*/
+        width: 475px;
+        height: 260px;
+        margin: 600px 0px 0px 0px;
+        position: relative;
+        margin-bottom: 0px;
+        background: rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        border: 3px solid #454545;
+        border-radius: 20px;
+    }
+
+    .botones-sliders-e {
+        /*botones de las sliders*/
+        width: 540px;
+        height: 270px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-bottom: 0px;
+        overflow: hidden;
+    }
+
+    .img-sliders-e {
+        /*imágenes de las sliders*/
+        width: 400%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow-y: hidden;
+        z-index: 1;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+    #s1-e {
+        /*botón 1*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        top: 240px;
+        left: 43%;
+        bottom: 25px;
+        margin-left: -36px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s2-e {
+        /*botón 2*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        top: 240px;
+        left: 43%;
+        bottom: 25px;
+        margin-left: -12px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s3-e {
+        /*botón 3*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        top: 240px;
+        left: 43%;
+        bottom: 25px;
+        margin-left: 12px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s4-e {
+        /*botón 4*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        top: 240px;
+        left: 43%;
+        bottom: 25px;
+        margin-left: 36px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    /*Clase GLE SUV*/
+
+    #context_top-u>h2 {
+        border-bottom: 1px solid #968f7e;
+    }
+
+    #context_top-u {
+        position: absolute;
+        margin: 150px 15px 0px 15px;
+        font-size: 16px;
+    }
+
+    #sliders-u {
+        /*slider de las imágenes*/
+        width: 475px;
+        height: 260px;
+        margin: 630px 0px 0px 0px;
+        position: relative;
+        margin-bottom: 0px;
+        background: rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        border: 3px solid #454545;
+        border-radius: 20px;
+    }
+
+    .botones-sliders-u {
+        /*botones de las sliders*/
+        width: 540px;
+        height: 270px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-bottom: 0px;
+        overflow: hidden;
+    }
+
+    .img-sliders-u {
+        /*imágenes de las sliders*/
+        width: 400%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow-y: hidden;
+        z-index: 1;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+    #s1-u {
+        /*botón 1*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        top: 240px;
+        left: 43%;
+        bottom: 25px;
+        margin-left: -36px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s2-u {
+        /*botón 2*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        top: 240px;
+        left: 43%;
+        bottom: 25px;
+        margin-left: -12px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s3-u {
+        /*botón 3*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        top: 240px;
+        left: 43%;
+        bottom: 25px;
+        margin-left: 12px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s4-u {
+        /*botón 4*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        top: 240px;
+        left: 43%;
+        bottom: 25px;
+        margin-left: 36px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    /*Copyright del sitio web*/
+
+    .copyright-li {
+        border-top: 1px solid #2045ab;
+        list-style: none;
+        text-align: center;
+        float: right;
+        margin: 60px 50px 10px 0px;
+    }
+}
+
+@media screen and (max-width: 650px) and (min-width: 480px) {
+
+    /*Pone en responsive la página cuando cambia a menos de 650px y más de 480px*/
+
+    #mercedes {
+        /*logo del sitio web*/
+        margin-top: 20px;
+        left: 8px;
+    }
+}
+
+@media screen and (max-width: 900px) and (min-width: 651px) {
+
+    /*Pone en responsive la página cuando cambia a menos de 900px y más de 651px*/
+    /*Nuestros Vehículos, las imágenes cambian solas*/
+
+    #context_top>h2 {
+        position: relative;
+        display: block;
+        margin: 350px 0px -290px 0px;
+    }
+
+    #sliders {
+        /*slider de las imágenes*/
+        width: 650px;
+        height: 320px;
+        margin: 330px auto;
+        position: relative;
+        margin-bottom: 0px;
+        background: rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        border: 3px solid #454545;
+        border-radius: 20px;
+        z-index: 3000;
+    }
+
+    .botones-sliders {
+        /*botones de las sliders*/
+        width: 650px;
+        height: 700px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-bottom: 0px;
+        overflow: hidden;
+        z-index: 3000;
+    }
+
+    .img-sliders {
+        /*imágenes de las sliders*/
+        width: 400%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow-y: hidden;
+        z-index: 1;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        z-index: 3000;
+    }
+
+    /*Clase S Berlina*/
+
+    #context_top-b>h2 {
+        border-bottom: 1px solid #968f7e;
+    }
+
+    #context_top-b {
+        position: absolute;
+        margin: 300px 20px 0px 20px;
+        font-size: 16px;
+    }
+
+    #sliders-b {
+        /*slider de las imágenes*/
+        width: 650px;
+        height: 320px;
+        margin: 870px 0px 0px 0px;
+        position: relative;
+        margin-bottom: 0px;
+        background: rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        border: 3px solid #454545;
+        border-radius: 20px;
+    }
+
+    .botones-sliders-b {
+        /*botones de las sliders*/
+        width: 650px;
+        height: 320px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-bottom: 0px;
+        overflow: hidden;
+    }
+
+    .img-sliders-b {
+        /*imágenes de las sliders*/
+        width: 400%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow-y: hidden;
+        z-index: 1;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+    #s1-b {
+        /*botón 1*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 48%;
+        bottom: 25px;
+        margin-left: -36px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s2-b {
+        /*botón 2*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 48%;
+        bottom: 25px;
+        margin-left: -12px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s3-b {
+        /*botón 3*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 48%;
+        bottom: 25px;
+        margin-left: 12px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s4-b {
+        /*botón 4*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 48%;
+        bottom: 25px;
+        margin-left: 36px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    /*Clase c coupé*/
+
+    #context_top-c>h2 {
+        border-bottom: 1px solid #968f7e;
+    }
+
+    #context_top-c {
+        position: absolute;
+        margin: 150px 20px 0px 20px;
+        font-size: 16px;
+    }
+
+    #sliders-c {
+        /*slider de las imágenes*/
+        width: 650px;
+        height: 320px;
+        margin: 660px 0px 0px 0px;
+        position: relative;
+        margin-bottom: 0px;
+        background: rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        border: 3px solid #454545;
+        border-radius: 20px;
+    }
+
+    .botones-sliders-c {
+        /*botones de las sliders*/
+        width: 650px;
+        height: 330px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-bottom: 0px;
+        overflow: hidden;
+    }
+
+    .img-sliders-c {
+        /*imágenes de las sliders*/
+        width: 400%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow-y: hidden;
+        z-index: 1;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+    #s1-c {
+        /*botón 1*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 48%;
+        bottom: 25px;
+        margin-left: -36px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s2-c {
+        /*botón 2*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 48%;
+        bottom: 25px;
+        margin-left: -12px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s3-c {
+        /*botón 3*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 48%;
+        bottom: 25px;
+        margin-left: 12px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s4-c {
+        /*botón 4*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 48%;
+        bottom: 25px;
+        margin-left: 36px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    /*Eléctrico*/
+
+    #context_top-e>h2 {
+        border-bottom: 1px solid #968f7e;
+    }
+
+    #context_top-e {
+        position: absolute;
+        margin: 150px 20px 0px 20px;
+        font-size: 16px;
+    }
+
+    #sliders-e {
+        /*slider de las imágenes*/
+        width: 650px;
+        height: 320px;
+        margin: 820px 0px 0px 0px;
+        position: relative;
+        margin-bottom: 0px;
+        background: rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        border: 3px solid #454545;
+        border-radius: 20px;
+    }
+
+    .botones-sliders-e {
+        /*botones de las sliders*/
+        width: 650px;
+        height: 330px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-bottom: 0px;
+        overflow: hidden;
+    }
+
+    .img-sliders-e {
+        /*imágenes de las sliders*/
+        width: 400%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow-y: hidden;
+        z-index: 1;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+    #s1-e {
+        /*botón 1*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 48%;
+        bottom: 25px;
+        margin-left: -36px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s2-e {
+        /*botón 2*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 48%;
+        bottom: 25px;
+        margin-left: -12px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s3-e {
+        /*botón 3*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 48%;
+        bottom: 25px;
+        margin-left: 12px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s4-e {
+        /*botón 4*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 48%;
+        bottom: 25px;
+        margin-left: 36px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    /*Clase GLE SUV*/
+
+    #context_top-u>h2 {
+        border-bottom: 1px solid #968f7e;
+    }
+
+    #context_top-u {
+        position: absolute;
+        margin: 150px 20px 0px 20px;
+        font-size: 16px;
+    }
+
+    #sliders-u {
+        /*slider de las imágenes*/
+        width: 650px;
+        height: 320px;
+        margin: 850px 0px 0px 0px;
+        position: relative;
+        margin-bottom: 0px;
+        background: rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        border: 3px solid #454545;
+        border-radius: 20px;
+    }
+
+    .botones-sliders-u {
+        /*botones de las sliders*/
+        width: 650px;
+        height: 330px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-bottom: 0px;
+        overflow: hidden;
+    }
+
+    .img-sliders-u {
+        /*imágenes de las sliders*/
+        width: 400%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow-y: hidden;
+        z-index: 1;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+    #s1-u {
+        /*botón 1*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 48%;
+        bottom: 25px;
+        margin-left: -36px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s2-u {
+        /*botón 2*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 48%;
+        bottom: 25px;
+        margin-left: -12px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s3-u {
+        /*botón 3*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 48%;
+        bottom: 25px;
+        margin-left: 12px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s4-u {
+        /*botón 4*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 48%;
+        bottom: 25px;
+        margin-left: 36px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    /*Copyright del sitio web*/
+
+    .copyright-li {
+        border-top: 1px solid #2045ab;
+        list-style: none;
+        text-align: center;
+        float: right;
+        margin: 60px 50px 10px 0px;
+    }
+}
+
+@media screen and (max-width: 900px) and (min-width: 651px) {
+
+    /*Pone en responsive la página cuando cambia a menos de 900px y más de 651px*/
+
+    #mercedes {
+        /*logo del sitio web*/
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 901px) {
+
+    /*Pone en responsive la página cuando cambia a menos de 1200px y más de 901px*/
+    /*Nuestros Vehículos, las imágenes cambian solas*/
+
+    #context_top>h2 {
+        position: relative;
+        display: block;
+        margin: 350px 0px -290px 0px;
+    }
+
+    #sliders {
+        /*slider de las imágenes*/
+        width: 800px;
+        height: 430px;
+        margin: 330px auto;
+        position: relative;
+        margin-bottom: 0px;
+        background: rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        border: 3px solid #454545;
+        border-radius: 20px;
+        z-index: 3000;
+    }
+
+    .botones-sliders {
+        /*botones de las sliders*/
+        width: 800px;
+        height: 820px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-bottom: 0px;
+        overflow: hidden;
+        z-index: 3000;
+    }
+
+    .img-sliders {
+        /*imágenes de las sliders*/
+        width: 400%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow-y: hidden;
+        z-index: 1;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        z-index: 3000;
+    }
+
+    /*Clase S Berlina*/
+
+    #context_top-b>h2 {
+        border-bottom: 1px solid #968f7e;
+    }
+
+    #context_top-b {
+        position: absolute;
+        margin: 300px 50px 0px 50px;
+        font-size: 16px;
+    }
+
+    #sliders-b {
+        /*slider de las imágenes*/
+        width: 800px;
+        height: 420px;
+        margin: 600px 0px 0px 0px;
+        position: relative;
+        margin-bottom: 0px;
+        background: rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        border: 3px solid #454545;
+        border-radius: 20px;
+    }
+
+    .botones-sliders-b {
+        /*botones de las sliders*/
+        width: 800px;
+        height: 420px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-bottom: 0px;
+        overflow: hidden;
+    }
+
+    .img-sliders-b {
+        /*imágenes de las sliders*/
+        width: 400%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow-y: hidden;
+        z-index: 1;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+    #s1-b {
+        /*botón 1*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 48%;
+        bottom: 25px;
+        margin-left: -36px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s2-b {
+        /*botón 2*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 48%;
+        bottom: 25px;
+        margin-left: -12px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s3-b {
+        /*botón 3*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 48%;
+        bottom: 25px;
+        margin-left: 12px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s4-b {
+        /*botón 4*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 48%;
+        bottom: 25px;
+        margin-left: 36px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    /*Clase c coupé*/
+
+    #context_top-c>h2 {
+        border-bottom: 1px solid #968f7e;
+    }
+
+    #context_top-c {
+        position: absolute;
+        margin: 150px 50px 0px 50px;
+        font-size: 16px;
+    }
+
+    #sliders-c {
+        /*slider de las imágenes*/
+        width: 800px;
+        height: 440px;
+        margin: 430px 0px 0px 0px;
+        position: relative;
+        margin-bottom: 0px;
+        background: rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        border: 3px solid #454545;
+        border-radius: 20px;
+    }
+
+    .botones-sliders-c {
+        /*botones de las sliders*/
+        width: 800px;
+        height: 440px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-bottom: 0px;
+        overflow: hidden;
+    }
+
+    .img-sliders-c {
+        /*imágenes de las sliders*/
+        width: 400%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow-y: hidden;
+        z-index: 1;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+    #s1-c {
+        /*botón 1*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 49%;
+        bottom: 25px;
+        margin-left: -36px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s2-c {
+        /*botón 2*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 49%;
+        bottom: 25px;
+        margin-left: -12px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s3-c {
+        /*botón 3*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 49%;
+        bottom: 25px;
+        margin-left: 12px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s4-c {
+        /*botón 4*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 49%;
+        bottom: 25px;
+        margin-left: 36px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    /*Eléctrico*/
+
+    #context_top-e>h2 {
+        border-bottom: 1px solid #968f7e;
+    }
+
+    #context_top-e {
+        position: absolute;
+        margin: 150px 50px 0px 50px;
+        font-size: 16px;
+    }
+
+    #sliders-e {
+        /*slider de las imágenes*/
+        width: 800px;
+        height: 440px;
+        margin: 500px 0px 0px 0px;
+        position: relative;
+        margin-bottom: 0px;
+        background: rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        border: 3px solid #454545;
+        border-radius: 20px;
+    }
+
+    .botones-sliders-e {
+        /*botones de las sliders*/
+        width: 880px;
+        height: 440px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-bottom: 0px;
+        overflow: hidden;
+    }
+
+    .img-sliders-e {
+        /*imágenes de las sliders*/
+        width: 400%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow-y: hidden;
+        z-index: 1;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+    #s1-e {
+        /*botón 1*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 45%;
+        bottom: 25px;
+        margin-left: -36px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s2-e {
+        /*botón 2*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 45%;
+        bottom: 25px;
+        margin-left: -12px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s3-e {
+        /*botón 3*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 45%;
+        bottom: 25px;
+        margin-left: 12px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s4-e {
+        /*botón 4*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 45%;
+        bottom: 25px;
+        margin-left: 36px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    /*Clase GLE SUV*/
+
+    #context_top-u>h2 {
+        border-bottom: 1px solid #968f7e;
+    }
+
+    #context_top-u {
+        position: absolute;
+        margin: 150px 50px 0px 50px;
+        font-size: 16px;
+    }
+
+    #sliders-u {
+        /*slider de las imágenes*/
+        width: 800px;
+        height: 400px;
+        margin: 530px 0px 0px 0px;
+        position: relative;
+        margin-bottom: 0px;
+        background: rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        border: 3px solid #454545;
+        border-radius: 20px;
+    }
+
+    .botones-sliders-u {
+        /*botones de las sliders*/
+        width: 800px;
+        height: 410px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-bottom: 0px;
+        overflow: hidden;
+    }
+
+    .img-sliders-u {
+        /*imágenes de las sliders*/
+        width: 400%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow-y: hidden;
+        z-index: 1;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+    #s1-u {
+        /*botón 1*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 50%;
+        bottom: 25px;
+        margin-left: -36px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s2-u {
+        /*botón 2*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 50%;
+        bottom: 25px;
+        margin-left: -12px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s3-u {
+        /*botón 3*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 50%;
+        bottom: 25px;
+        margin-left: 12px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s4-u {
+        /*botón 4*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 50%;
+        bottom: 25px;
+        margin-left: 36px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    /*Copyright del sitio web*/
+
+    .copyright-li {
+        border-top: 1px solid #2045ab;
+        list-style: none;
+        text-align: center;
+        float: right;
+        margin: 60px 50px 10px 0px;
+    }
+}
+
+@media screen and (max-width: 1500px) and (min-width: 1201px) {
+
+    /*Pone en responsive la página cuando cambia a menos de 1500px y más de 1201px*/
+    /*Nuestros Vehículos, las imágenes cambian solas*/
+
+    #context_top>h2 {
+        position: relative;
+        display: block;
+        margin: 350px 0px -290px 0px;
+    }
+
+    #sliders {
+        /*slider de las imágenes*/
+        width: 850px;
+        height: 430px;
+        margin: 330px auto;
+        position: relative;
+        margin-bottom: 0px;
+        background: rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        border: 3px solid #454545;
+        border-radius: 20px;
+        z-index: 3000;
+    }
+
+    .botones-sliders {
+        /*botones de las sliders*/
+        width: 850px;
+        height: 820px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-bottom: 0px;
+        overflow: hidden;
+        z-index: 3000;
+    }
+
+    .img-sliders {
+        /*imágenes de las sliders*/
+        width: 400%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow-y: hidden;
+        z-index: 1;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        z-index: 3000;
+    }
+
+    /*Clase S Berlina*/
+
+    #context_top-b>h2 {
+        border-bottom: 1px solid #968f7e;
+    }
+
+    #context_top-b {
+        position: absolute;
+        margin: 250px 60px 0px 60px;
+        font-size: 16px;
+    }
+
+    #sliders-b {
+        /*slider de las imágenes*/
+        width: 850px;
+        height: 440px;
+        margin: 500px 0px 0px 0px;
+        position: relative;
+        margin-bottom: 0px;
+        background: rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        border: 3px solid #454545;
+        border-radius: 20px;
+    }
+
+    .botones-sliders-b {
+        /*botones de las sliders*/
+        width: 850px;
+        height: 440px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-bottom: 0px;
+        overflow: hidden;
+    }
+
+    .img-sliders-b {
+        /*imágenes de las sliders*/
+        width: 400%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow-y: hidden;
+        z-index: 1;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+    #s1-b {
+        /*botón 1*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 49%;
+        bottom: 25px;
+        margin-left: -36px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s2-b {
+        /*botón 2*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 49%;
+        bottom: 25px;
+        margin-left: -12px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s3-b {
+        /*botón 3*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 49%;
+        bottom: 25px;
+        margin-left: 12px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s4-b {
+        /*botón 4*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 49%;
+        bottom: 25px;
+        margin-left: 36px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    /*Clase c coupé*/
+
+    #context_top-c>h2 {
+        border-bottom: 1px solid #968f7e;
+    }
+
+    #context_top-c {
+        position: absolute;
+        margin: 170px 60px 0px 60px;
+        font-size: 16px;
+    }
+
+    #sliders-c {
+        /*slider de las imágenes*/
+        width: 850px;
+        height: 440px;
+        margin: 430px 0px 0px 0px;
+        position: relative;
+        margin-bottom: 0px;
+        background: rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        border: 3px solid #454545;
+        border-radius: 20px;
+    }
+
+    .botones-sliders-c {
+        /*botones de las sliders*/
+        width: 850px;
+        height: 440px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-bottom: 0px;
+        overflow: hidden;
+    }
+
+    .img-sliders-c {
+        /*imágenes de las sliders*/
+        width: 400%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow-y: hidden;
+        z-index: 1;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+    #s1-c {
+        /*botón 1*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 50%;
+        bottom: 25px;
+        margin-left: -36px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s2-c {
+        /*botón 2*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 50%;
+        bottom: 25px;
+        margin-left: -12px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s3-c {
+        /*botón 3*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 50%;
+        bottom: 25px;
+        margin-left: 12px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s4-c {
+        /*botón 4*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 50%;
+        bottom: 25px;
+        margin-left: 36px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    /*Eléctrico*/
+
+    #context_top-e>h2 {
+        border-bottom: 1px solid #968f7e;
+    }
+
+    #context_top-e {
+        position: absolute;
+        margin: 150px 60px 0px 60px;
+        font-size: 16px;
+    }
+
+    #sliders-e {
+        /*slider de las imágenes*/
+        width: 850px;
+        height: 440px;
+        margin: 430px 0px 0px 0px;
+        position: relative;
+        margin-bottom: 0px;
+        background: rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        border: 3px solid #454545;
+        border-radius: 20px;
+    }
+
+    .botones-sliders-e {
+        /*botones de las sliders*/
+        width: 880px;
+        height: 440px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-bottom: 0px;
+        overflow: hidden;
+    }
+
+    .img-sliders-e {
+        /*imágenes de las sliders*/
+        width: 400%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow-y: hidden;
+        z-index: 1;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+    #s1-e {
+        /*botón 1*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 47%;
+        bottom: 25px;
+        margin-left: -36px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s2-e {
+        /*botón 2*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 47%;
+        bottom: 25px;
+        margin-left: -12px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s3-e {
+        /*botón 3*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 47%;
+        bottom: 25px;
+        margin-left: 12px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s4-e {
+        /*botón 4*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 47%;
+        bottom: 25px;
+        margin-left: 36px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    /*Clase GLE SUV*/
+
+    #context_top-u>h2 {
+        border-bottom: 1px solid #968f7e;
+    }
+
+    #context_top-u {
+        position: absolute;
+        margin: 150px 60px 0px 60px;
+        font-size: 16px;
+    }
+
+    #sliders-u {
+        /*slider de las imágenes*/
+        width: 850px;
+        height: 400px;
+        margin: 430px 0px 0px 0px;
+        position: relative;
+        margin-bottom: 0px;
+        background: rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        border: 3px solid #454545;
+        border-radius: 20px;
+    }
+
+    .botones-sliders-u {
+        /*botones de las sliders*/
+        width: 850px;
+        height: 410px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-bottom: 0px;
+        overflow: hidden;
+    }
+
+    .img-sliders-u {
+        /*imágenes de las sliders*/
+        width: 400%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow-y: hidden;
+        z-index: 1;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+    #s1-u {
+        /*botón 1*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 51%;
+        bottom: 25px;
+        margin-left: -36px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s2-u {
+        /*botón 2*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 51%;
+        bottom: 25px;
+        margin-left: -12px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s3-u {
+        /*botón 3*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 51%;
+        bottom: 25px;
+        margin-left: 12px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s4-u {
+        /*botón 4*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 51%;
+        bottom: 25px;
+        margin-left: 36px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    /*Copyright del sitio web*/
+
+    .copyright-li {
+        border-top: 1px solid #2045ab;
+        list-style: none;
+        text-align: center;
+        float: right;
+        margin: 60px 50px 10px 0px;
+    }
+}
+
+@media screen and (max-width: 1720px) and (min-width: 1501px) {
+
+    /*Pone en responsive la página cuando cambia a menos de 1720px y más de 1501px*/
+    /*Nuestros Vehículos, las imágenes cambian solas*/
+
+    #context_top>h2 {
+        position: relative;
+        display: block;
+        margin: 300px 0px -290px 0px;
+        font-family: sans-serif;
+        font-size: 30px;
+        color: transparent;
+        background-image: url(https://media.giphy.com/media/WmoA2i9oII7OBQzzGT/giphy.gif);
+        background-position: center;
+        -webkit-background-clip: text;
+    }
+
+    #sliders {
+        /*slider de las imágenes*/
+        width: 940px;
+        height: 470px;
+        margin: 320px auto;
+        position: relative;
+        margin-bottom: 0px;
+        background: rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        border: 7px solid #454545;
+        border-radius: 20px;
+    }
+
+    .botones-sliders {
+        /*botones de las sliders*/
+        width: 940px;
+        height: 470px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-bottom: 0px;
+        overflow: hidden;
+    }
+
+    .img-sliders {
+        /*imágenes de las sliders*/
+        width: 400%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow-y: hidden;
+        z-index: 1;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+    /*Clase S Berlina*/
+
+    #context_top-b>h2 {
+        border-bottom: 1px solid #968f7e;
+        display: block;
+        font-family: sans-serif;
+        font-size: 28px;
+        color: transparent;
+        background-image: url(https://media.giphy.com/media/hWWeurJRRMGnVyN9Em/giphy.gif);
+        background-position: center;
+        -webkit-background-clip: text;
+    }
+
+    #context_top-b {
+        position: absolute;
+        margin: 335px 1000px -290px 20px;
+        font-size: 20px;
+    }
+
+    #sliders-b {
+        /*slider de las imágenes*/
+        width: 840px;
+        height: 470px;
+        margin: 350px -20px 0px 610px;
+        position: relative;
+        margin-bottom: 0px;
+        background: rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        border: 7px solid #454545;
+        border-radius: 20px;
+    }
+
+    .botones-sliders-b {
+        /*botones de las sliders*/
+        width: 940px;
+        height: 470px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-bottom: 0px;
+        overflow: hidden;
+    }
+
+    .img-sliders-b {
+        /*imágenes de las sliders*/
+        width: 400%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow-y: hidden;
+        z-index: 1;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+    #s1-b {
+        /*botón 1*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 48%;
+        bottom: 25px;
+        margin-left: -36px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s2-b {
+        /*botón 2*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 48%;
+        bottom: 25px;
+        margin-left: -12px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s3-b {
+        /*botón 3*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 48%;
+        bottom: 25px;
+        margin-left: 12px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s4-b {
+        /*botón 4*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 48%;
+        bottom: 25px;
+        margin-left: 36px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    /*Clase c coupé*/
+
+    #context_top-c>h2 {
+        border-bottom: 1px solid #968f7e;
+        display: block;
+        font-family: sans-serif;
+        font-size: 28px;
+        color: transparent;
+        background-image: url(https://media.giphy.com/media/hWWeurJRRMGnVyN9Em/giphy.gif);
+        background-position: center;
+        -webkit-background-clip: text;
+    }
+
+    #context_top-c {
+        position: absolute;
+        margin: 335px 50px -290px 960px;
+        font-size: 20px;
+    }
+
+    #sliders-c {
+        /*slider de las imágenes*/
+        width: 840px;
+        height: 470px;
+        margin: 350px 30px 0px -620px;
+        position: relative;
+        margin-bottom: 0px;
+        background: rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        border: 7px solid #454545;
+        border-radius: 20px;
+    }
+
+    .botones-sliders-c {
+        /*botones de las sliders*/
+        width: 940px;
+        height: 470px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-bottom: 0px;
+        overflow: hidden;
+    }
+
+    .img-sliders-c {
+        /*imágenes de las sliders*/
+        width: 400%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow-y: hidden;
+        z-index: 1;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+    #s1-c {
+        /*botón 1*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 45%;
+        bottom: 25px;
+        margin-left: -36px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s2-c {
+        /*botón 2*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 45%;
+        bottom: 25px;
+        margin-left: -12px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s3-c {
+        /*botón 3*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 45%;
+        bottom: 25px;
+        margin-left: 12px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s4-c {
+        /*botón 4*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 45%;
+        bottom: 25px;
+        margin-left: 36px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    /*Eléctrico*/
+
+    #context_top-e>h2 {
+        border-bottom: 1px solid #968f7e;
+        display: block;
+        font-family: sans-serif;
+        font-size: 28px;
+        color: transparent;
+        background-image: url(https://media.giphy.com/media/hWWeurJRRMGnVyN9Em/giphy.gif);
+        background-position: center;
+        -webkit-background-clip: text;
+    }
+
+    #context_top-e {
+        position: absolute;
+        margin: 335px 1000px -290px 20px;
+        font-size: 20px;
+    }
+
+    #sliders-e {
+        /*slider de las imágenes*/
+        width: 840px;
+        height: 470px;
+        margin: 350px -20px 0px 610px;
+        position: relative;
+        margin-bottom: 0px;
+        background: rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        border: 7px solid #454545;
+        border-radius: 20px;
+    }
+
+    .botones-sliders-e {
+        /*botones de las sliders*/
+        width: 940px;
+        height: 470px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-bottom: 0px;
+        overflow: hidden;
+    }
+
+    .img-sliders-e {
+        /*imágenes de las sliders*/
+        width: 400%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow-y: hidden;
+        z-index: 1;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+    #s1-e {
+        /*botón 1*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 45%;
+        bottom: 25px;
+        margin-left: -36px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s2-e {
+        /*botón 2*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 45%;
+        bottom: 25px;
+        margin-left: -12px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s3-e {
+        /*botón 3*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 45%;
+        bottom: 25px;
+        margin-left: 12px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s4-e {
+        /*botón 4*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 45%;
+        bottom: 25px;
+        margin-left: 36px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    /*Clase GLE SUV*/
+
+    #context_top-u>h2 {
+        border-bottom: 1px solid #968f7e;
+        display: block;
+        font-family: sans-serif;
+        font-size: 28px;
+        color: transparent;
+        background-image: url(https://media.giphy.com/media/hWWeurJRRMGnVyN9Em/giphy.gif);
+        background-position: center;
+        -webkit-background-clip: text;
+    }
+
+    #context_top-u {
+        position: absolute;
+        margin: 335px 50px -290px 960px;
+        font-size: 20px;
+    }
+
+    #sliders-u {
+        /*slider de las imágenes*/
+        width: 840px;
+        height: 470px;
+        margin: 350px 30px 0px -620px;
+        position: relative;
+        margin-bottom: 0px;
+        background: rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        border: 7px solid #454545;
+        border-radius: 20px;
+    }
+
+    .botones-sliders-u {
+        /*botones de las sliders*/
+        width: 940px;
+        height: 470px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-bottom: 0px;
+        overflow: hidden;
+    }
+
+    .img-sliders-u {
+        /*imágenes de las sliders*/
+        width: 400%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow-y: hidden;
+        z-index: 1;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+    #s1-u {
+        /*botón 1*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 45%;
+        bottom: 25px;
+        margin-left: -36px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s2-u {
+        /*botón 2*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 45%;
+        bottom: 25px;
+        margin-left: -12px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s3-u {
+        /*botón 3*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 45%;
+        bottom: 25px;
+        margin-left: 12px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #s4-u {
+        /*botón 4*/
+        padding: 7px;
+        background: #fff;
+        position: absolute;
+        left: 45%;
+        bottom: 25px;
+        margin-left: 36px;
+        border-radius: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    /*Copyright del sitio web*/
+
+    .copyright-li {
+        border-top: 1px solid #2045ab;
+        list-style: none;
+        float: right;
+        margin: 200px 20px 10px 600px;
+    }
+}

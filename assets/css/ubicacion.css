@@ -1,0 +1,574 @@
+/* Navegador del sitio web*/
+
+#mercedes-logo {
+    /*logo del sitio web*/
+    margin-top: 20px;
+}
+
+nav {
+    position: absolute;
+    display: block;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 225px;
+    background-repeat: no-repeat;
+    background: url("../imagenes/menu1.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+
+}
+
+nav>ul {
+    display: inline-block;
+    border-radius: 0.35em;
+    padding: 15px;
+}
+
+nav ul li:hover>ul {
+    display: block;
+}
+
+nav>ul>li {
+    display: inline-block;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+}
+
+nav ul>ul {
+    display: none;
+    position: absolute;
+}
+
+nav>ul>li>a,
+nav>ul>li>span {
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 1.6px;
+}
+
+nav>ul>li:hover>a {
+    color: #81DAF5;
+    transform: scale(1.1);
+}
+
+nav>ul>li.active>a,
+nav>ul>li.active>span {
+    color: #fff;
+}
+
+body {
+    /*body del sitio web*/
+    background: url("../imagenes/fondo1.jpg") no-repeat center center fixed;
+    background-size: 100% 100%;
+}
+
+iframe {
+    /*Mapa con la ubicación de la empresa*/
+    float: left;
+    width: 800px;
+    margin: 50px 0 20px 50px;
+    border-radius: 20px;
+}
+
+.text {
+    /*Texto junto con el mapa*/
+    float: right;
+    color: #fff;
+}
+
+#titulo-map {
+    /*Título del mapa*/
+    margin: 270px 500px 0 50px;
+    font-family: sans-serif;
+    font-size: 33px;
+    color: transparent;
+    background-image: url(https://media.giphy.com/media/WmoA2i9oII7OBQzzGT/giphy.gif);
+    background-position: center;
+    -webkit-background-clip: text;
+
+}
+
+#titulo {
+    /*Primer título del texto*/
+    margin: 50px 480px 0 0;
+    font-family: sans-serif;
+    font-size: 33px;
+    color: transparent;
+    background-image: url(https://media.giphy.com/media/hWWeurJRRMGnVyN9Em/giphy.gif);
+    background-position: center;
+    -webkit-background-clip: text;
+
+}
+
+#titulo2 {
+    /* Segundo título de los horarios*/
+    color: transparent;
+    background-image: url(https://media.giphy.com/media/hWWeurJRRMGnVyN9Em/giphy.gif);
+    background-position: center;
+    -webkit-background-clip: text;
+}
+
+/*Color del enlace y tamaó de letra del texto*/
+.text>a {
+    color: #81DAF5;
+}
+
+.text>a:hover {
+    color: #3b4bff;
+}
+
+.text>p {
+    font-size: 18px;
+}
+
+/*Orientación de los horarios*/
+.horario1 {
+    word-spacing: 110px;
+}
+
+.horario2 {
+    word-spacing: 105px;
+}
+
+.horario3 {
+    word-spacing: 83px;
+}
+
+.horario4 {
+    word-spacing: 108px;
+}
+
+.horario5 {
+    word-spacing: 102px;
+}
+
+.horario6 {
+    word-spacing: 115px;
+}
+
+.horario7 {
+    word-spacing: 100px;
+}
+
+/*Copyright del sitio web*/
+#copyright>li>a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#copyright>li:hover>a {
+    color: #81DAF5;
+}
+
+.copyright-li {
+    border-top: 1px solid #2045ab;
+    list-style: none;
+    float: right;
+    margin: 150px 20px 10px 1000px;
+}
+
+/* Responsive  ----------------------------------------------*/
+
+@media screen and (max-width: 479px) {
+
+    /*Pone en responsive la página cuando cambia a menos de 479px*/
+    nav,
+    nav ul,
+    nav li,
+    nav ul li {
+        width: 100%;
+        color: #000;
+        padding-left: 0px;
+        padding-top: 0px;
+        margin: -2px 0px 0px -5px;
+
+    }
+
+    nav {
+        position: absolute;
+        display: block;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100px;
+        background: url("../imagenes/menu2.jpg")no-repeat center center fixed;
+        background-size: 100% 100%;
+
+    }
+
+    nav ul ul {
+        position: inherit;
+        height: auto;
+        display: block;
+        padding-right: 20px;
+
+    }
+
+    iframe {
+        /*Mapa con la ubicación de la empresa*/
+        width: 90%;
+        height: 300px;
+        margin: 40px 0 0px 20px;
+    }
+
+    #titulo-map {
+        /*Título del mapa*/
+        text-align: center;
+        margin: 200px 0px 0px 0px;
+
+    }
+
+    .text {
+        /*Texto junto con el mapa*/
+        text-align: center;
+        margin-right: 20px;
+        width: 90%;
+        color: #fff;
+    }
+
+    #titulo {
+        /*Primer título del texto*/
+        margin: 50px 0 0 0;
+
+    }
+
+    .copyright-li {
+        /*Copyright del sitio web*/
+        border-top: 1px solid #2045ab;
+        list-style: none;
+        text-align: center;
+        float: right;
+        margin: 100px 10px 0px -30px;
+    }
+
+
+
+}
+
+@media screen and (max-width: 479px) {
+
+    /*Pone en responsive la página cuando cambia a menos de 479px*/
+
+    #mercedes {
+        /*logo del sitio web*/
+        margin-top: 20px;
+
+    }
+
+}
+
+.show-menu-btn,
+.hide-menu-btn {
+    /*boton de menu responsive*/
+    transition: 0.4s;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    padding-left: 30px;
+    margin: 0px;
+    color: #fff;
+
+}
+
+#chk {
+    /*check menu responsive (está oculto y cuando se pulsa el boton en relidad pulsamos este check*/
+    position: absolute;
+    visibility: hidden;
+    z-index: -1111;
+
+}
+
+@media screen and (max-width:479px) {
+
+    /*Pone en responsive la página cuando cambia a menos de 479px*/
+    .show-menu-btn,
+    .hide-menu-btn {
+        /*boton de menu responsive*/
+        display: block;
+
+    }
+
+    body {
+        /*body del sitio web*/
+        background: url("../imagenes/menu2.jpg") no-repeat center center fixed;
+        background-size: 100% 100%;
+    }
+
+
+    .menu {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background-color: #454545;
+        left: -150%;
+        top: 0;
+        transition: 0.5s;
+        text-align: center;
+        overflow-x: hidden;
+
+    }
+
+    .activa {
+        margin-top: 50px;
+
+    }
+
+    .menu a {
+        display: block;
+        padding: 20px;
+
+    }
+
+    nav>ul>li {
+        padding-bottom: 0px;
+        margin-left: 5px;
+
+    }
+
+    .show-menu-btn {
+        /*boton de menu responsive (...)*/
+        position: absolute;
+        top: 40px;
+        right: 48px;
+
+    }
+
+    .hide-menu-btn {
+        /*boton de menu responsive (X)*/
+        position: absolute;
+        top: 40px;
+        right: 50px;
+
+    }
+
+    #chk:checked~.menu {
+        /*check menu responsive*/
+        left: 0;
+
+    }
+
+}
+
+@media screen and (max-width: 650px) and (min-width: 480px) {
+
+    /*Pone en responsive la página cuando cambia a menos de 650px y más de 480px*/
+
+    iframe {
+        /*Mapa con la ubicación de la empresa*/
+        width: 90%;
+        height: 350px;
+        margin: 40px 0 0px 30px;
+    }
+
+    #titulo-map {
+        /*Título del mapa*/
+        text-align: center;
+        margin: 300px 0px 0px 0px;
+
+    }
+
+    .text {
+        /*Texto junto con el mapa*/
+        text-align: center;
+        margin-right: 30px;
+        width: 90%;
+        color: #fff;
+    }
+
+    #titulo {
+        /*Primer título del texto*/
+        margin: 50px 0 0 0;
+
+    }
+
+    .copyright-li {
+        /*Copyright del sitio web*/
+        border-top: 1px solid #2045ab;
+        list-style: none;
+        text-align: center;
+        float: right;
+        margin: 100px 50px 10px 0px;
+
+    }
+
+}
+
+
+@media screen and (max-width: 650px) and (min-width: 480px) {
+
+    /*Pone en responsive la página cuando cambia a menos de 650px y más de 480px*/
+
+    body {
+        /*body del sitio web*/
+        background: url("../imagenes/fondo1.jpg")no-repeat center center fixed;
+        background-size: 100% 100%;
+    }
+
+}
+
+@media screen and (max-width: 900px) and (min-width: 651px) {
+
+    /*Pone en responsive la página cuando cambia a menos de 900px y más de 651px*/
+
+    iframe {
+        /*Mapa con la ubicación de la empresa*/
+        width: 90%;
+        height: 350px;
+        margin: 40px 0 0px 30px;
+    }
+
+    #titulo-map {
+        /*Título del mapa*/
+        text-align: center;
+        margin: 300px 0px 0px 0px;
+
+    }
+
+    .text {
+        /*Texto junto con el mapa*/
+        text-align: center;
+        margin-right: 30px;
+        width: 90%;
+        color: #fff;
+    }
+
+    #titulo {
+        /*Primer título del texto*/
+        margin: 50px 0 0 0;
+
+    }
+
+    .copyright-li {
+        /*Copyright del sitio web*/
+        border-top: 1px solid #2045ab;
+        list-style: none;
+        text-align: center;
+        margin: 200px 10px 10px -30px;
+    }
+
+
+}
+
+@media screen and (max-width: 900px) and (min-width: 651px) {
+
+    /*Pone en responsive la página cuando cambia a menos de 900px y más de 651px*/
+
+    body {
+        /*body del sitio web*/
+        background: url("../imagenes/fondo1.jpg")no-repeat center center fixed;
+        background-size: 100% 100%;
+    }
+
+}
+
+@media screen and (max-width: 1200px) and (min-width: 901px) {
+
+    /*Pone en responsive la página cuando cambia a menos de 1200px y más de 901px*/
+
+    iframe {
+        /*Mapa con la ubicación de la empresa*/
+        width: 90%;
+        height: 400px;
+        margin: 40px 0 0px 60px;
+    }
+
+    #titulo-map {
+        /*Título del mapa*/
+        text-align: center;
+        margin: 300px 0px 0px 0px;
+
+    }
+
+    .text {
+        /*Texto junto con el mapa*/
+        text-align: center;
+        margin-right: 30px;
+        width: 90%;
+        color: #fff;
+    }
+
+    #titulo {
+        /*Primer título del texto*/
+        margin: 50px 0 0 0;
+
+    }
+
+    .copyright-li {
+        /*Copyright del sitio web*/
+        border-top: 1px solid #2045ab;
+        list-style: none;
+        text-align: center;
+        margin: 100px 10px 10px -30px;
+    }
+
+}
+
+@media screen and (max-width: 1200px) and (min-width: 901px) {
+
+    /*Pone en responsive la página cuando cambia a menos de 1200px y más de 901px*/
+
+    body {
+        /*body del sitio web*/
+        background: url("../imagenes/fondo1.jpg")no-repeat center center fixed;
+        background-size: 100% 100%;
+    }
+
+}
+
+@media screen and (max-width: 1700px) and (min-width: 1201px) {
+    /*Pone en responsive la página cuando cambia a menos de 1700px y más de 1201px*/
+
+    iframe {
+        /*Mapa con la ubicación de la empresa*/
+        width: 90%;
+        height: 450px;
+        margin: 40px 0 0px 70px;
+    }
+
+    #titulo-map {
+        /*Título del mapa*/
+        text-align: center;
+        margin: 300px 0px 0px 0px;
+
+    }
+
+    .text {
+        /*Texto junto con el mapa*/
+        text-align: center;
+        margin-right: 60px;
+        width: 90%;
+        color: #fff;
+    }
+
+    #titulo {
+        /*Primer título del texto*/
+        margin: 50px 0 0 0;
+
+    }
+
+    .copyright-li {
+        /*Copyright del sitio web*/
+        border-top: 1px solid #2045ab;
+        list-style: none;
+        text-align: center;
+        margin: 100px 10px 10px -30px;
+    }
+
+}
+
+@media screen and (max-width: 1700px) and (min-width: 1201px) {
+    
+    /*Pone en responsive la página cuando cambia a menos de 1700px y más de 1201px*/
+
+    body {
+        /*body del sitio web*/
+        background: url("../imagenes/fondo1.jpg")no-repeat center center fixed;
+        background-size: 100% 100%;
+    }
+
+}

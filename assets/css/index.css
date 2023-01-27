@@ -1,0 +1,553 @@
+/* Navegador del sitio web*/
+
+#mercedes-logo {
+    /*logo del sitio web*/
+    margin-top: 20px;
+}
+
+nav {
+    position: absolute;
+    display: block;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: url("../imagenes/inicio.jpg") no-repeat center center fixed;
+    background-size: 100% 100%;
+
+}
+
+nav>ul {
+    display: inline-block;
+    border-radius: 0.35em;
+    padding: 15px;
+}
+
+nav ul li:hover>ul {
+    display: block;
+}
+
+nav>ul>li {
+    display: inline-block;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+}
+
+nav ul>ul {
+    display: none;
+    position: absolute;
+}
+
+nav>ul>li>a,
+nav>ul>li>span {
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 1.6px;
+}
+
+nav>ul>li:hover>a {
+    color: #81DAF5;
+    transform: scale(1.1);
+}
+
+nav>ul>li.active>a,
+nav>ul>li.active>span {
+    color: #fff;
+}
+
+body {
+    /*body del sitio web*/
+    background: url("../imagenes/fondo1.jpg")no-repeat center center fixed;
+    background-size: 100% 100%;
+}
+
+iframe {
+    /*Vídeo promocional*/
+    float: left;
+    margin-top: 990px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    border: 5px solid #2e2c2c;
+    border-radius: 20px;
+}
+
+.text {
+    /*Texto junto con el vídeo*/
+    float: right;
+    font-size: 30px;
+    color: #fff;
+    margin: -660px 50px 0px 1100px;
+    border: 5px solid #2e2c2c;
+    border-radius: 20px;
+    background-image: url("../imagenes/menu1.jpg");
+}
+
+.text>p {
+    margin: 10px;
+}
+
+.text>p>a {
+    color: #81DAF5;
+}
+
+.text>p:hover>a {
+    color: #3b4bff;
+}
+
+/*Copyright del sitio web*/
+
+#copyright>li>a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#copyright>li:hover>a {
+    color: #81DAF5;
+}
+
+.copyright-li {
+    border-top: 1px solid #2045ab;
+    list-style: none;
+    float: right;
+    margin: 40px 20px 10px 600px;
+}
+
+/* Responsive  ----------------------------------------------*/
+
+@media screen and (max-width: 479px) {
+
+    /*Pone en responsive la página cuando cambia a menos de 479px*/
+
+    nav,
+    nav ul,
+    nav li,
+    nav ul li {
+        width: 100%;
+        color: #000;
+        padding-left: 0px;
+        padding-top: 0px;
+        margin: -2px 0px 0px -5px;
+
+    }
+
+
+    nav {
+        position: absolute;
+        display: block;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100px;
+        background: url("../imagenes/menu2.jpg")no-repeat center center fixed;
+        background-size: 100% 100%;
+
+    }
+
+    nav ul ul {
+        position: inherit;
+        height: auto;
+        display: block;
+        padding-right: 20px;
+
+    }
+
+    iframe {
+        /*Vídeo promocional*/
+        width: 370px;
+        height: 250px;
+        float: none;
+        margin-top: 100px;
+        margin-left: 0px;
+        margin-bottom: 20px;
+        border: 5px solid #2e2c2c;
+        border-radius: 20px;
+    }
+
+    .text {
+        /*Texto junto con el vídeo*/
+        float: left;
+        font-size: 22px;
+        color: #fff;
+        margin: 40px 50px 30px 48px;
+        border: 2px solid #2e2c2c;
+        border-radius: 20px;
+        background-image: url("../imagenes/menu1.jpg");
+    }
+
+    .copyright-li {
+        /*Copyright del sitio web*/
+        border-top: 1px solid #2045ab;
+        list-style: none;
+        text-align: center;
+        float: right;
+        margin: 190px 10px 0px -30px;
+    }
+
+}
+
+@media screen and (max-width: 479px) {
+
+    /*Pone en responsive la página cuando cambia a menos de 479px*/
+
+    #mercedes {
+        /*logo del sitio web*/
+        margin-top: 20px;
+
+    }
+
+}
+
+.show-menu-btn,
+.hide-menu-btn {
+    /*boton de menu responsive*/
+    transition: 0.4s;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    padding-left: 30px;
+    margin: 0px;
+    color: #fff;
+
+}
+
+#chk {
+    /*check menu responsive (está oculto y cuando se pulsa el boton en relidad pulsamos este check*/
+    position: absolute;
+    visibility: hidden;
+    z-index: -1111;
+
+}
+
+@media screen and (max-width: 479px) {
+
+    /*Pone en responsive la página cuando cambia a menos de 479px*/
+
+    .show-menu-btn,
+    .hide-menu-btn {
+        /*boton de menu responsive*/
+        display: block;
+
+    }
+
+    body {
+        /*body del sitio web*/
+        background: url("../imagenes/menu2.jpg")no-repeat center center fixed;
+        background-size: 100% 100%;
+    }
+
+    .menu {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background-color: #454545;
+        left: -150%;
+        top: 0;
+        transition: 0.5s;
+        text-align: center;
+        overflow-x: hidden;
+    }
+
+    .activa {
+        margin-top: 50px;
+
+    }
+
+    .menu a {
+        display: block;
+        padding: 10px;
+
+    }
+
+    #nav>ul>li {
+        padding-bottom: 0px;
+
+        margin-left: 5px;
+
+    }
+
+    .show-menu-btn {
+        /*boton de menu responsive (...)*/
+        position: absolute;
+        top: 40px;
+        right: 48px;
+
+    }
+
+    .hide-menu-btn {
+        /*boton de menu responsive (X)*/
+        position: absolute;
+        top: 40px;
+        right: 50px;
+
+    }
+
+    #chk:checked~.menu {
+        /*check menu responsive*/
+        left: 0;
+
+    }
+
+}
+
+@media screen and (max-width: 650px) and (min-width: 480px) {
+
+    /*Pone en responsive la página cuando cambia a menos de 650px y más de 480px*/
+
+    nav {
+        position: absolute;
+        display: block;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 225px;
+        background-repeat: no-repeat;
+        background: url("../imagenes/menu1.jpg");
+        background-size: 100% 100%;
+        background-position: center;
+
+    }
+
+    iframe {
+        /*Vídeo promocional*/
+        width: 450px;
+        height: 300px;
+        float: none;
+        margin-top: 250px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+        border: 5px solid #2e2c2c;
+        border-radius: 20px;
+    }
+
+    .text {
+        /*Texto junto con el vídeo*/
+        float: left;
+        font-size: 22px;
+        color: #fff;
+        margin: 10px 50px 30px 48px;
+        border: 2px solid #2e2c2c;
+        border-radius: 20px;
+        background-image: url("../imagenes/menu1.jpg");
+    }
+
+    .copyright-li {
+        /*Copyright del sitio web*/
+        border-top: 1px solid #2045ab;
+        list-style: none;
+        text-align: center;
+        float: right;
+        margin: 100px 50px 10px 0px;
+    }
+
+}
+
+@media screen and (max-width: 650px) and (min-width: 480px) {
+
+    /*Pone en responsive la página cuando cambia a menos de 650px y más de 480px*/
+
+    body {
+        /*body del sitio web*/
+        background: url("../imagenes/fondo1.jpg")no-repeat center center fixed;
+        background-size: 100% 100%;
+    }
+
+
+}
+
+@media screen and (max-width: 900px) and (min-width: 651px) {
+
+    /*Pone en responsive la página cuando cambia a menos de 900px y más de 651px*/
+    nav {
+        position: absolute;
+        display: block;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 225px;
+        background-repeat: no-repeat;
+        background: url("../imagenes/menu1.jpg");
+        background-size: 100% 100%;
+        background-position: center;
+
+    }
+
+    iframe {
+        /*Vídeo promocional*/
+        width: 600px;
+        height: 420px;
+        float: none;
+        margin-top: 250px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+        border: 5px solid #2e2c2c;
+        border-radius: 20px;
+    }
+
+    .text {
+        /*Texto junto con el vídeo*/
+        float: left;
+        font-size: 22px;
+        color: #fff;
+        margin: 10px 50px 30px 48px;
+        border: 2px solid #2e2c2c;
+        border-radius: 20px;
+        background-image: url("../imagenes/menu1.jpg");
+    }
+
+    .copyright-li {
+        /*Copyright del sitio web*/
+        border-top: 1px solid #2045ab;
+        list-style: none;
+        text-align: center;
+        float: right;
+        margin: 100px 50px 10px 0px;
+
+    }
+
+}
+
+@media screen and (max-width: 900px) and (min-width: 651px) {
+
+    /*Pone en responsive la página cuando cambia a menos de 900px y más de 651px*/
+
+    body {
+        /*body del sitio web*/
+        background: url("../imagenes/fondo1.jpg")no-repeat center center fixed;
+        background-size: 100% 100%;
+    }
+
+
+}
+
+@media screen and (max-width: 1200px) and (min-width: 901px) {
+
+    /*Pone en responsive la página cuando cambia a menos de 1200px y más de 901px*/
+
+    nav {
+        position: absolute;
+        display: block;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 225px;
+        background-repeat: no-repeat;
+        background: url("../imagenes/menu1.jpg");
+        background-size: 100% 100%;
+        background-position: center;
+
+    }
+
+    iframe {
+        /*Vídeo promocional*/
+        width: 750px;
+        height: 520px;
+        float: none;
+        margin-top: 250px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+        border: 5px solid #2e2c2c;
+        border-radius: 20px;
+    }
+
+    .text {
+        /*Texto junto con el vídeo*/
+        float: left;
+        font-size: 22px;
+        color: #fff;
+        margin: 10px 50px 30px 48px;
+        border: 2px solid #2e2c2c;
+        border-radius: 20px;
+        background-image: url("../imagenes/menu1.jpg");
+    }
+
+    .copyright-li {
+        /*Copyright del sitio web*/
+        border-top: 1px solid #2045ab;
+        list-style: none;
+        text-align: center;
+        float: right;
+        margin: 100px 50px 10px 0px;
+    }
+
+}
+
+@media screen and (max-width: 1200px) and (min-width: 901px) {
+    /*Pone en responsive la página cuando cambia a menos de 1200px y más de 901px*/
+
+    body {
+        /*body del sitio web*/
+        background: url("../imagenes/fondo1.jpg")no-repeat center center fixed;
+        background-size: 100% 100%;
+    }
+
+
+}
+
+@media screen and (max-width: 1500px) and (min-width: 1201px) {
+
+    /*Pone en responsive la página cuando cambia a menos de 1500px y más de 1201px*/
+
+    nav {
+        position: absolute;
+        display: block;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 225px;
+        background-repeat: no-repeat;
+        background: url("../imagenes/menu1.jpg");
+        background-size: 100% 100%;
+        background-position: center;
+
+    }
+
+    iframe {
+        /*Vídeo promocional*/
+        width: 950px;
+        height: 620px;
+        float: none;
+        margin-top: 250px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+        border: 5px solid #2e2c2c;
+        border-radius: 20px;
+    }
+
+    .text {
+        /*Texto junto con el vídeo*/
+        float: left;
+        font-size: 22px;
+        color: #fff;
+        margin: 110px 50px 30px 48px;
+        border: 2px solid #2e2c2c;
+        border-radius: 20px;
+        background-image: url("../imagenes/menu1.jpg");
+    }
+
+    .copyright-li {
+        /*Copyright del sitio web*/
+        border-top: 1px solid #2045ab;
+        list-style: none;
+        text-align: center;
+        float: right;
+        margin: 100px 50px 10px 0px;
+
+    }
+
+}
+
+@media screen and (max-width: 1500px) and (min-width: 1201px) {
+
+    /*Pone en responsive la página cuando cambia a menos de 1500px y más de 1201px*/
+
+    body {
+        /*body del sitio web*/
+        background: url("../imagenes/fondo1.jpg")no-repeat center center fixed;
+        background-size: 100% 100%;
+    }
+
+}

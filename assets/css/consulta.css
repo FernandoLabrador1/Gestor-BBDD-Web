@@ -1,0 +1,440 @@
+/* Navegador del sitio web*/
+
+.mercedes{ /*logo del sitio web*/
+  margin-top: 20px;
+}
+
+nav { 
+  position: absolute; 
+  display: block;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 225px;
+  background-repeat: no-repeat;
+  background: url("../imagenes/menu1.jpg") ;
+  background-size: 100% 100%;
+  background-position: center; 
+
+}
+
+nav>ul { 
+  display: inline-block;
+  border-radius: 0.35em;
+  padding: 15px;
+}
+
+nav ul li:hover>ul {
+  display: block;
+}
+
+nav>ul>li { 
+  display: inline-block;
+  text-align: center;
+  padding: 20px;
+  cursor: pointer; 
+  word-spacing: normal;
+}
+
+.submenu{
+   word-spacing: 70px;
+}
+
+nav ul ul {
+  display: none;
+  position: absolute;
+}
+
+nav>ul>li>a,
+nav>ul>li>span {
+  display: block;
+  color: #fff;
+  text-transform: uppercase;  
+  text-decoration: none; 
+  font-size: 16px; 
+  letter-spacing: 1.6px;
+} 
+
+nav>ul>li:hover>a { 
+  color: #81DAF5;
+  transform: scale(1.1);
+}
+
+nav>ul>li.active>a,
+nav>ul>li.active>span {
+  color: #fff;
+}
+
+body{ 
+  /*body del sitio web*/
+  background: url("../imagenes/fondo1.jpg") no-repeat center center fixed;
+  background-size: 100% 100%;
+}
+
+/*Copyright del sitio web*/
+
+#copyright > li > a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#copyright>li:hover>a {
+  color: #81DAF5;
+}
+
+.copyright-li{
+  border-top: 1px solid #2045ab;
+  list-style: none;
+  float: right;
+  margin: 100px 20px 10px 600px;
+}
+
+/* Importamos las fuentes necesarias*/
+
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+@import url("fontawesome-all.min.css");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700,900");
+
+
+.formconsulta {
+  margin: 230px 500px 0px 500px;
+}
+
+ /*Propiedades de los campos a rellenar*/
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+  width: 100%; 
+  padding: 5px;
+  border: 1px solid black; 
+  resize: vertical;
+  margin: 5px;
+  text-align: center;  
+}
+
+input[type=submit] {
+  /* Propiedades del botón input enviar*/
+  padding: 16px;
+  border: none;
+  cursor: pointer;
+  margin: 50px;
+  color: #fff;
+  font-weight: bold;
+  background: transparent;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  transition: all 1.5s ease-in-out; 
+}
+
+input[type=submit]:hover {
+  background-color: #ccc;
+  color: #000;
+  transform: scale(1.1);
+}
+
+#coment {  
+  /* Propiedades del campo comentario*/
+  border: 1px solid #ccc;
+  color: black;
+}
+
+.mensaje {  
+  /* Propiedades del mensaje de envío*/
+  padding: 30px;
+  font-family: 'Balsamiq Sans', cursive;
+  font-size: 120%;
+  background-color: #FFF5EE;
+}
+
+
+/* Formulario ------------------------------------------------*/
+
+.datos {  
+  /* Propiedades de los campos a rellenar */
+  padding-bottom: 10px;
+  width: 70%;
+}
+
+label {
+  /* Define las propiedades de los apartados a rellenar*/
+  color: #fff;
+  font-weight: bold;
+  padding: 12px 12px 12px 9px;
+  display: inline-block;
+}
+
+/* Responsive  ----------------------------------------------*/
+
+@media screen and (max-width: 1600px) {
+
+  /*Pone en responsive la página cuando cambia a menos de 1600px*/
+
+    .formconsulta {
+      margin: 300px 200px 0px 200px;
+    }
+
+    .copyright-li{ 
+      /*Copyright del sitio web*/
+      border-top: 1px solid #2045ab;
+      list-style: none;
+      text-align: center;
+      margin: 100px 20px 10px 0px;
+    }
+
+}
+
+@media screen and (max-width: 1100px) {
+
+  /*Pone en responsive la página cuando cambia a menos de 1100px*/
+
+    .formconsulta {
+      margin: 300px 150px 0px 150px;
+    }
+
+    .copyright-li{ 
+      /*Copyright del sitio web*/
+      border-top: 1px solid #2045ab;
+      list-style: none;
+      text-align: center;
+      margin: 100px 20px 10px 0px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+
+  /*Pone en responsive la página cuando cambia a menos de 850x*/
+
+    .datos {
+      float: none;
+      position: static; 
+      width: 80%;
+      padding-top: 30px;
+      height: auto; 
+      margin: 0px;
+    }
+
+    .formconsulta {
+      margin: 300px 60px 0px 60px;
+
+    }
+
+    .copyright-li{ 
+      /*Copyright del sitio web*/
+      border-top: 1px solid #2045ab;
+      list-style: none;
+      text-align: center;
+      margin: 100px 20px 10px 0px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+  /*Pone en responsive la página cuando cambia a menos de 650px*/
+
+    .datos {
+      float: none;
+      position: static; 
+      width: 80%;
+      padding-top: 30px;
+      height: auto; 
+      margin: 0px;
+    }
+
+    .formconsulta {
+      margin: 300px 50px 0px 35px;
+
+    }
+
+    .copyright-li{ 
+      /*Copyright del sitio web*/
+      border-top: 1px solid #2045ab;  
+      list-style: none;
+      text-align: center;
+      float: right;
+      margin: 100px 50px 10px 0px;
+
+    }
+}
+
+@media screen and (max-width: 479px) {
+
+  /*Pone en responsive la página cuando cambia a menos de 479px*/
+
+    .datos {
+      float: none;
+      position: static; 
+      width: 80%;
+      padding-top: 30px;
+      height: auto; 
+      margin: 0px;
+    }
+
+    .formconsulta {
+        margin: 100px 55px 0px 25px;
+
+    }
+
+    label{
+      padding: 12px 12px 12px 30px;
+    }
+
+    input[type=submit] {
+      margin-left: 70px;
+
+    }
+
+}
+
+@media screen and (max-width: 479px) {
+
+  /*Pone en responsive la página cuando cambia a menos de 479px*/
+
+    nav,
+    nav ul,
+    nav li,
+    nav ul li {
+      width: 100%;
+      color: #000;
+      padding-left: 0px;
+      padding-top: 0px;
+      margin: -2px 0px 0px -5px; 
+
+    }
+    
+    nav { 
+      position: absolute; 
+      display: block;
+      top: 0px;
+      left: 0px;
+      width: 100%; 
+      height: 100px;
+      background: url("../imagenes/menu2.jpg")no-repeat center center fixed;
+      background-size: 100% 100%;
+    
+    }
+
+    nav ul ul {
+      position: inherit;
+      height: auto;
+      display: block;
+      padding-right: 20px;
+
+    }
+
+    .copyright-li{ 
+      /*Copyright del sitio web*/
+      border-top: 1px solid #2045ab;
+      list-style: none;
+      text-align: center;
+      float: right;
+      margin: 100px 10px 0px -30px;
+    }
+
+
+}
+
+@media screen and (max-width: 479px) {
+
+  /*Pone en responsive la página cuando cambia a menos de 479px*/
+
+    #mercedes{ 
+      /*logo del sitio web*/
+      margin-top: 20px;
+
+    }
+
+}
+    .show-menu-btn,
+    .hide-menu-btn { 
+      /*boton de menu responsive*/
+      transition: 0.4s; 
+      font-size: 30px;
+      cursor: pointer;
+      display: none; 
+      padding-left: 30px;
+      margin: 0px;  
+      color: #fff;
+
+    }
+
+    #chk { 
+      /*check menu responsive (está oculto y cuando se pulsa el boton en relidad pulsamos este check*/ 
+      position: absolute; 
+      visibility: hidden;
+      z-index: -1111; 
+
+    }
+
+@media screen and (max-width:479px) {
+
+  /*Pone en responsive la página cuando cambia a menos de 479px*/
+  
+    .show-menu-btn,
+    .hide-menu-btn { 
+      /*boton de menu responsive*/
+      display: block;
+
+    }
+
+    body{ 
+      /*body del sitio web*/
+      background: url("../imagenes/menu2.jpg") no-repeat center center fixed;
+      background-size: 100% 100%;
+    }
+
+    .menu { 
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      background-color: #454545;
+      left: -150%; 
+      top: 0;
+      transition: 0.5s;
+      text-align: center;  
+      overflow-x: hidden;
+
+    }
+
+    .activa{
+      margin-top: 50px;
+
+    }
+
+    .menu a { 
+      display: block;
+      padding: 20px;
+
+    }
+
+    nav>ul>li {
+      padding-bottom: 0px;
+      margin-left: 5px;
+
+    } 
+
+    .show-menu-btn { 
+      /*boton de menu responsive (...)*/
+      position: absolute; 
+      top: 28px; 
+      right: 36px;
+
+    }
+
+    .hide-menu-btn { 
+      /*boton de menu responsive (X)*/
+      position: absolute;
+      top: 40px;
+      right: 50px;
+
+    }
+
+    #chk:checked~.menu { 
+      /*check menu responsive*/
+      left: 0;
+
+    }
+
+}
