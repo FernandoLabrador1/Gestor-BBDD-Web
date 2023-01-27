@@ -1,7 +1,8 @@
-# Gestor-BBDD-Web
+# Web-de-autos
 
 * Desarrollo de Aplicaciones Multiplataforma *
 
-Proyecto de desarrollo de interfaces donde realizamos una página web para la gestión de una base de datos.
+Proyecto de lenguaje de marcas en donde realizamos una web de automóviles completa. Opcionalmente la hemos adaptado a diferentes tamaños 
+de pantalla y móvil (diseño responsive).
 
-Para la realización de dicha web, hemos utilizado ASP.NET con microsoft visual studio y la sintaxis de Razor (marcado de Razor, HTML y C#).
+Para la realización del proyecto se ha utilizado HTML, CSS, JavaScript y PHP.
